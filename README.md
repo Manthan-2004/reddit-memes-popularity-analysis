@@ -35,12 +35,7 @@ The goal is to explore **what makes memes go viral**, identify optimal posting t
 ---
 
 ## 🔹 Exploratory Data Analysis (EDA)
-### Subreddit Comparison
-- Dank memes → **3x higher engagement**.  
-- Wholesome memes → highest **virality ratio** (more comments per upvote).  
-
-![Total Engagement by Subreddit](images/engagement_bar.png)
-
+  
 ### Time-of-Day Analysis
 - Peak posting time: **8–10 PM IST** (+40% more engagement).  
 
@@ -49,12 +44,12 @@ The goal is to explore **what makes memes go viral**, identify optimal posting t
 ### Day-of-Week Analysis
 - Fridays & Sundays → best performing days for meme virality.  
 
-![Engagement by Weekday](images/weekday_bar.png)
+![Engagement by Weekday](https://github.com/Manthan-2004/reddit-memes-popularity-analysis/blob/main/average%20engagement%20by%20weekday.png)
 
 ### Engagement Correlation
 - Upvotes ↔ Comments correlation = **0.82** → strong predictor of virality.  
 
-![Upvotes vs Comments Scatter](images/scatter_plot.png)
+![Upvotes vs Comments Scatter](https://github.com/Manthan-2004/reddit-memes-popularity-analysis/blob/main/upvotes%20vs%20comments%20(virality%20scatterplot).png)
 
 ---
 
