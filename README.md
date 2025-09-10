@@ -1,75 +1,77 @@
-Meme Popularity Analytics
+# 📊 Meme Popularity Analytics
 
-Project Overview:
-This project analyzes meme virality trends across Reddit by scraping data from popular meme subreddits such as r/memes, r/dankmemes, and r/wholesomememes. The goal was to explore what makes memes go viral, identify timing strategies, and provide actionable insights using Python for data analysis and visualization.
+## 🔹 Project Overview
+This project analyzes meme virality trends across Reddit by scraping data from popular meme subreddits (`r/memes`, `r/dankmemes`, `r/wholesomememes`).  
+The goal is to explore **what makes memes go viral**, identify optimal posting times, and provide actionable insights using **Python (EDA)** and **visual storytelling**.
 
-Objectives:
+---
 
-Collect meme data (titles, upvotes, comments, timestamps) using Reddit API (PRAW).
+## 🔹 Objectives
+- Collect meme data (titles, upvotes, comments, timestamps) using **Reddit API (PRAW)**.  
+- Clean and preprocess the dataset (deduplication, feature engineering, datetime extraction).  
+- Perform **Exploratory Data Analysis (EDA)** to identify key trends.  
+- Visualize results with **Seaborn/Matplotlib**.  
+- Derive **insights & recommendations** for meme virality strategy.  
 
-Clean and preprocess the dataset including deduplication, feature engineering, and datetime extraction.
+---
 
-Perform exploratory data analysis (EDA) to discover engagement patterns.
+## 🔹 Tools & Technologies
+- **Python**: Pandas, NumPy, Matplotlib, Seaborn  
+- **API**: Reddit PRAW (for scraping)  
+- **Data Cleaning**: Feature engineering, datetime conversion, outlier handling  
+- **Visualization**: Bar charts, line charts, scatter plots  
+- *(Optional)* Power BI / Tableau → Interactive Dashboard  
 
-Visualize results with Python (Seaborn and Matplotlib).
+---
 
-Derive insights and recommendations for meme virality strategies.
+## 🔹 Data Processing
+- Removed duplicates & very short/low-effort titles.  
+- Engineered metrics:  
+  - **Engagement Score** = Upvotes + Comments  
+  - **Virality Ratio** = Comments ÷ Upvotes  
+- Extracted **time features**: posting hour, day, weekday.  
+- Handled outliers by capping extreme engagement values.  
 
-Tools & Technologies:
+---
 
-Python (Pandas, NumPy, Matplotlib, Seaborn)
+## 🔹 Exploratory Data Analysis (EDA)
+### Subreddit Comparison
+- Dank memes → **3x higher engagement**.  
+- Wholesome memes → highest **virality ratio** (more comments per upvote).  
 
-Reddit API (PRAW)
+![Total Engagement by Subreddit](images/engagement_bar.png)
 
-Data cleaning and feature engineering
+### Time-of-Day Analysis
+- Peak posting time: **8–10 PM IST** (+40% more engagement).  
 
-Visualization with bar charts, line charts, scatterplots
+![Engagement by Hour](https://github.com/Manthan-2004/reddit-memes-popularity-analysis/blob/main/average%20engagement%20by%20posting%20hour.png)
 
-Optional: Power BI or Tableau for dashboard creation
+### Day-of-Week Analysis
+- Fridays & Sundays → best performing days for meme virality.  
 
-Data Processing Steps:
+![Engagement by Weekday](images/weekday_bar.png)
 
-Removed duplicate or low-effort meme titles.
+### Engagement Correlation
+- Upvotes ↔ Comments correlation = **0.82** → strong predictor of virality.  
 
-Engineered metrics:
+![Upvotes vs Comments Scatter](images/scatter_plot.png)
 
-Engagement Score = Upvotes + Comments
+---
 
-Virality Ratio = Comments ÷ Upvotes
+## 🔹 Insights & Recommendations
+- **Content Strategy**: Focus on Dank memes for reach, Wholesome memes for community discussion.  
+- **Timing**: Post memes at **8–10 PM IST** and on **weekends** for maximum traction.  
+- **Virality Prediction**: Early upvotes strongly indicate overall meme success.  
 
-Extracted time features: posting hour, day, and weekday.
+---
 
-Handled outliers to avoid skewed analysis.
+## 🔹 Next Steps
+- Expand scraping to **Twitter & Instagram memes** for cross-platform analysis.  
+- Apply **Sentiment Analysis** on meme titles to study tone impact.  
+- Build a **predictive model** → *Will this meme go viral?*  
+- Develop an **interactive Power BI / Tableau dashboard** for deeper insights.  
 
-Exploratory Data Analysis Highlights:
+---
 
-Dank memes generated 3x higher engagement than other categories.
-
-Wholesome memes had the highest virality ratio (more comments per upvote).
-
-Memes posted between 8–10 PM IST received 40% higher engagement.
-
-Fridays and Sundays were the best days for meme virality.
-
-Strong correlation (r = 0.82) between upvotes and comments, indicating virality predictors.
-
-Insights & Recommendations:
-
-Focus on Dank memes for higher reach, and Wholesome memes for stronger community engagement.
-
-Post memes during peak times (8–10 PM IST) and on weekends for maximum traction.
-
-Early upvotes are a strong indicator of overall success, useful for predicting virality.
-
-Next Steps:
-
-Expand data collection to Twitter and Instagram memes for cross-platform comparison.
-
-Run sentiment analysis on meme titles to correlate tone with engagement.
-
-Build a predictive model to forecast meme virality.
-
-Optionally, develop an interactive dashboard in Power BI or Tableau.
-
-Author:
-Manthan Bhatjode.
+## 🔹 Author
+👤 **Manthan Bhatjode**  
